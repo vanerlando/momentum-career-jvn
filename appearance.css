@@ -1,0 +1,43 @@
+aside{overflow-y:auto}.appearance-settings{flex-shrink:0;margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:13px}.appearance-settings summary{cursor:pointer;font-weight:600;padding:10px 0;min-height:44px}.appearance-settings label{display:block;margin-top:12px}.appearance-settings select{display:block;width:100%;margin-top:6px;min-height:44px}.appearance-settings p{font-size:13px;color:var(--muted)}
+html[data-theme=dark]{color-scheme:dark;--bg:#131b18;--ink:#e4ece5;--muted:#aebcb0;--green:#477b5c;--lime:#d7e9ad;--line:#35453b}
+[data-theme=dark] :is(aside,.card,dialog,input,select,textarea,.ghost,label.ghost,.energy-options button,.donut>div){background:#202c25;color:var(--ink);border-color:var(--line)}
+[data-theme=dark] :is(.timer,.aside-note,th,.metric.green,.notice,.badge,.energy-options button.selected,nav .active){background:#2b3c2f;color:#dce9d1;border-color:#456047}
+[data-theme=dark] :is(.reflection textarea,.journal-input,.task .evidence,.profile i){background:#18231c;color:var(--ink)}
+[data-theme=dark] :is(.muted,.intro p,nav button,.metric span,.metric small,.bottom,footer,.quote,.task small,.task.done b,td small,.inline-label,.entry-form label,.budget-fields label,#saveStatus){color:#b5c3b5}
+[data-theme=dark] :is(.task,td,.history-row,details){border-color:var(--line)}
+[data-theme=dark] :is(.progress,.timeline){background:#39483c}
+[data-theme=dark] .text-button{color:#c1dda6}
+[data-theme=dark] .category-pill{color:#edf3e8;background:#293b31}
+[data-theme=dark] .brand{color:#e4ece5}
+[data-theme=dark] input::placeholder,[data-theme=dark] textarea::placeholder{color:#93a497}
+[data-text-size=large]{--read-size:15px;--field-size:16px;--nav-size:14px}
+[data-text-size=xlarge]{--read-size:18px;--field-size:18px;--nav-size:16px}
+html:not([data-text-size=normal]) :is(.muted,p,table,td,.task b,.task small,.task-body small,.notice,.quote,.bottom,.intro p,.metric span,.metric small,.legend>div,.legend b,.entry-form label,.budget-fields label,.inline-label,.reflection label,.review-grid label,.appearance-settings label){font-size:var(--read-size);line-height:1.6}
+html:not([data-text-size=normal]) :is(input,select,textarea,.journal-input,.reflection textarea,.task .evidence,.primary,.ghost,label.ghost,.text-button){font-size:var(--field-size)}
+html:not([data-text-size=normal]) :is(nav span,th,.appearance-settings summary){font-size:var(--nav-size)}
+html:not([data-text-size=normal]) .task .evidence{height:auto;min-height:44px}
+html:not([data-text-size=normal]) .donut-layout{flex-wrap:wrap}
+html:not([data-text-size=normal]) .legend{min-width:180px}
+@media(max-width:760px){.appearance-settings{margin-top:12px}.appearance-settings select{max-width:100%}input,select,textarea,.journal-input,.reflection textarea{font-size:16px}.datebar{min-width:0}.datebar input{font-size:16px;max-width:160px}header{flex-wrap:wrap}.entry-form,.budget-fields{grid-template-columns:1fr}.entry-form .wide,.form-buttons{grid-column:1}.appearance-settings summary{font-size:14px}html:not([data-text-size=normal]) nav button{width:calc(50% - 4px)}html:not([data-text-size=normal]) .stats{grid-template-columns:1fr 1fr}}
+/* Readability overrides: secondary text must remain readable in both themes. */
+:root{--muted:#4c5d52;--reading-secondary:#4c5d52}
+html[data-theme=dark]{--muted:#c0cec3;--reading-secondary:#c0cec3}
+html body :is(.muted,.intro p,.workspace,.aside-note p,.profile small,nav button,.metric span,.metric small,.bottom,footer,.quote,.task small,.task.done b,td small,.inline-label,.entry-form label,.budget-fields label,.reflection label,.review-grid label,.timeline-labels,.barcol,.empty,.donut span,.appearance-settings p,.cloud-note,#saveStatus){color:var(--reading-secondary)}
+html body :is(.muted,.intro p,.aside-note p,.metric span,.metric small,.bottom,footer,.quote,.task small,td small,.inline-label,.entry-form label,.budget-fields label,.reflection label,.review-grid label,.timeline-labels,.barcol,.empty,.donut span,.appearance-settings p,.cloud-note,#saveStatus){font-size:var(--read-size,13px);line-height:1.65}
+html body :is(th,.legend>div,.legend b,.timer-inputs label,.timer label.muted){font-size:var(--read-size,13px);line-height:1.5}
+html body th{color:var(--reading-secondary)}
+html body :is(.ghost,label.ghost,.delete){color:var(--reading-secondary)}
+html body :is(input,textarea)::placeholder{color:var(--reading-secondary);opacity:1}
+html body .task .evidence{font-size:var(--field-size,14px)}
+html body .legend>div{margin:10px 0}
+html body .legend b{white-space:nowrap}
+html body .trend text{fill:var(--reading-secondary);font-size:13px}
+html body .badge{color:#435339}
+html[data-theme=dark] body .badge{color:#dce9d1}
+html body nav .active{color:#315c40}
+html[data-theme=dark] body nav .active{color:#e0efd5}
+html body .focus p{color:#dce9df;font-size:var(--read-size,13px)}
+html body .kicker{color:#d3e2c8;font-size:12px}
+html body .profile small{font-size:10px;line-height:1.5}
+html body .workspace{font-size:11px;line-height:1.5}
+@media(max-width:760px){html body .legend>div,html body .legend b{font-size:var(--read-size,13px)}.donut-layout{flex-wrap:wrap}.legend{min-width:180px}}
